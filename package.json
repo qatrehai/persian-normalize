@@ -1,0 +1,36 @@
+{
+  "name": "persian-normalize",
+  "version": "1.0.0",
+  "description": "Normalize Persian and Arabic-script text. Fold ZWNJ, Arabic yeh/kaf, three digit sets and diacritics into one comparable form — or clean text for storage without destroying it.",
+  "type": "module",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": ["src"],
+  "sideEffects": false,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "persian", "farsi", "arabic", "normalize", "normalization",
+    "zwnj", "half-space", "nim-fasele", "rtl", "unicode",
+    "text", "search", "nlp", "tokenize", "diacritics",
+    "persian-digits", "arabic-digits", "i18n"
+  ],
+  "author": "Qatreh (https://qatrehai.ir)",
+  "license": "MIT",
+  "homepage": "https://qatrehai.ir/blog/persian-chatbot-text-normalization-en",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qatrehai/persian-normalize.git"
+  },
+  "bugs": { "url": "https://github.com/qatrehai/persian-normalize/issues" }
+}
